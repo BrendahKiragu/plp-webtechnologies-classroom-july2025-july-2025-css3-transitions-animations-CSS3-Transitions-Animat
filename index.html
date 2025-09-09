@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Animations</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hello and Welcome to my website</h1>
+      <p class="subtitle">
+        Today we are exploring Animations using CSS & JavaScript
+      </p>
+    </header>
+
+    <main>
+      <!-- Part 1 Card -->
+      <section class="card card-one">
+        <h2>🎨 Part 1: CSS3 Transitions & Animations</h2>
+        <p>Create dynamic styling effects using transitions and @keyframes.</p>
+        <div class="examples">
+          <button class="btn-hover">Hover Me</button>
+          <div class="fade-box">Fade Me</div>
+          <div class="slide-box">Slide Me</div>
+        </div>
+      </section>
+
+      <!-- Part 2 Card -->
+      <section class="card card-two">
+        <h2>📚 Part 2: JavaScript Functions</h2>
+        <p>
+          Demonstrate scope, parameters, and return values using small, reusable
+          functions.
+        </p>
+        <div class="examples column">
+          <!-- Updated UI for Square Calculation -->
+          <div class="square-section">
+            <input
+              type="number"
+              id="squareInput"
+              placeholder="Enter a number"
+            />
+            <button onclick="calculateFromInput()">Square It</button>
+            <p id="squareResult"></p>
+          </div>
+
+          <button onclick="showGreeting('Brenda')">Greet Me</button>
+          <button onclick="toggleBackground()">Change Background</button>
+
+        </div>
+      </section>
+
+      <!-- Part 3 Card -->
+      <section class="card card-three">
+        <h2>🎬 Part 3: Combining CSS & JavaScript</h2>
+        <p>Use JavaScript to dynamically trigger animations.</p>
+        <div class="examples">
+          <button onclick="animateBox()">Animate Box</button>
+          <div class="animated-box"></div>
+          <button onclick="flipCard()">Flip Card</button>
+          <div class="flip-card">
+            <div class="flip-inner">
+              <div class="flip-front">Front</div>
+              <div class="flip-back">Back</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ball Game -->
+      <section class="ball-section">
+        <h2>⚽ Mini Game: Moving Ball</h2>
+        <div class="ball-container">
+          <div id="ball"></div>
+        </div>
+        <div class="controls">
+          <button onclick="startBall()">Start</button>
+          <button onclick="stopBall()">Stop</button>
+          <button onclick="resumeBall()">Resume</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
